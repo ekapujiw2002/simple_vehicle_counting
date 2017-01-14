@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include <iostream>
 #include <string>
@@ -29,8 +29,8 @@ private:
   int key;
   cv::Mat img_input;
   cvb::CvTracks tracks;
-  std::map<cvb::CvID, std::vector<CvPoint2D64f>> points;
-  LaneOrientation LaneOrientation;
+  std::map<cvb::CvID, std::vector<CvPoint2D64f> > points;
+  LaneOrientation laneOrientation;
   std::map<cvb::CvID, VehiclePosition> positions;
   long countAB;
   long countBA;
